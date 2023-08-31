@@ -1,8 +1,22 @@
-# React + Vite
+# Free2Play Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Free2Play website, a platform that allows you to search for and view details about various free2play Games. This project is built using React.js, Tailwind CSS, and HTML to provide an interactive and visually appealing experience for all Gamers.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Search:** Easily search for Games by name.
+- **Details:** View comprehensive information about each Game, description, images, system requirements and more.
+- **Filter:** Filter by platform and genre.
+- **Sort:** Sort by relevance, popularity, release date or alphabetical.
+
+## Demo
+
+Check out the live demo of the Free2Play website [here](https://free2play.netlify.app/).
+
+## Technologies Used
+
+- React.js: A JavaScript library for building user interfaces.
+- Tailwind CSS: A utility-first CSS framework for rapid UI development.
+- HTML: The standard markup language for creating web pages.
+
+Happy exploring the world of free Games with our Free2Play website!

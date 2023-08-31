@@ -1,14 +1,33 @@
 import { Route, Routes } from "react-router-dom"
 import "./App.css"
+import Home from "./components/pages/Home/Home"
+import AllGames from "./components/pages/AllGames/AllGames"
+import RecentlyAdded from "./components/pages/RecentlyAdded/RecentlyAdded"
+import Details from "./components/pages/Details/Details"
+import NavMain from "./components/shared/NavMain/NavMain"
 
 function App() {
   return (
     <>
       <Routes>
-        <Route
-          path="/"
-          element={<h1>Hello</h1>}
-        />
+        <NavMain>
+          <Route
+            path="/"
+            element={<Home />}
+          />
+          <Route
+            path="/all"
+            element={<AllGames />}
+          />
+          <Route
+            path="/recently"
+            element={<RecentlyAdded />}
+          />
+          <Route
+            path="/details/:gameId"
+            element={<Details />}
+          />
+        </NavMain>
       </Routes>
     </>
   )
