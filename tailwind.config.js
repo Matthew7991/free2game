@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      width: {
+        "nav-side": "74px",
+      },
+      height: {
+        "nav-top": "64px",
+      },
       colors: {
         primary: "#FF4654",
         blueDark: "#040F14",

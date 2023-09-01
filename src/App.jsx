@@ -9,25 +9,24 @@ import NavMain from "./components/shared/NavMain/NavMain"
 function App() {
   return (
     <>
+      <NavMain />
       <Routes>
-        <NavMain>
-          <Route
-            path="/"
-            element={<Home />}
-          />
-          <Route
-            path="/all"
-            element={<AllGames />}
-          />
-          <Route
-            path="/recently"
-            element={<RecentlyAdded />}
-          />
-          <Route
-            path="/details/:gameId"
-            element={<Details />}
-          />
-        </NavMain>
+        <Route
+          path="/"
+          element={<Home />}
+        />
+        <Route
+          path="/all"
+          element={<AllGames />}
+        />
+        <Route
+          path="/recent"
+          element={<RecentlyAdded />}
+        />
+        <Route
+          path="/details/:gameId"
+          element={<Details />}
+        />
       </Routes>
     </>
   )

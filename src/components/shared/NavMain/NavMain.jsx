@@ -1,11 +1,13 @@
 import React from "react"
-import { Outlet } from "react-router-dom"
+import NavMainSide from "./NavMainSide/NavMainSide"
+import NavMainTop from "./NavMainTop/NavMainTop"
 
 function NavMain() {
   return (
-    <>
-      <Outlet />
-    </>
+    <header className="absolute flex h-screen">
+      <NavMainSide />
+      <NavMainTop />
+    </header>
   )
 }
 
