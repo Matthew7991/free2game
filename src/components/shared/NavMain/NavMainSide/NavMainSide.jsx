@@ -4,7 +4,9 @@ import { NavLink } from "react-router-dom"
 function NavMainSide() {
   return (
     <nav className="relative flex flex-col justify-center p-3 overflow-hidden border-r-2 border-white w-nav-side gap-9">
-      <button className={"w-full absolute top-0 left-0"}>
+      <button
+        className={"w-full absolute top-0 left-0"}
+        type="button">
         <div className="flex items-center justify-center aspect-square">
           <svg
             width="24"
@@ -18,8 +20,8 @@ function NavMainSide() {
               x2="24"
               y2="1"
               stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             />
             <line
               x1="0"
@@ -27,8 +29,8 @@ function NavMainSide() {
               x2="24"
               y2="12"
               stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             />
             <line
               x1="0"
@@ -36,8 +38,8 @@ function NavMainSide() {
               x2="24"
               y2="23"
               stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             />
           </svg>
         </div>
@@ -59,8 +61,8 @@ function NavMainSide() {
             <path
               d="M23.2069 11.2786L13.1925 1.66483C12.8056 1.29335 12.1944 1.29335 11.8075 1.66483L1.79311 11.2786C1.1433 11.9024 1.58487 13 2.48564 13H3.5V22C3.5 23.1046 4.39543 24 5.5 24H9.5V18C9.5 16.8954 10.3954 16 11.5 16H13.5C14.6046 16 15.5 16.8954 15.5 18V24H19.5C20.6046 24 21.5 23.1046 21.5 22V13H22.5144C23.4151 13 23.8567 11.9024 23.2069 11.2786Z"
               stroke="white"
-              stroke-width="2"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinejoin="round"
             />
           </svg>
         </div>
@@ -85,26 +87,26 @@ function NavMainSide() {
               height="14"
               rx="3"
               stroke="white"
-              stroke-width="2"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinejoin="round"
             />
             <path
               d="M12 7V5.5C12 4.67157 12.6716 4 13.5 4V4C14.3284 4 15 3.32843 15 2.5V1"
               stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             />
             <path
               d="M8 13V17"
               stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             />
             <path
               d="M10 15L6 15"
               stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             />
             <circle
               cx="16"
@@ -139,8 +141,8 @@ function NavMainSide() {
               id="path-1-inside-1_24_404"
               fill="white">
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M17 4C17 1.79086 15.2091 0 13 0H11C8.79086 0 7 1.79086 7 4V7H4C1.79086 7 0 8.79086 0 11V13C0 15.2091 1.79086 17 4 17H7V20C7 22.2091 8.79086 24 11 24H13C15.2091 24 17 22.2091 17 20V17H20C22.2091 17 24 15.2091 24 13V11C24 8.79086 22.2091 7 20 7H17V4Z"
               />
             </mask>

@@ -3,11 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      width: {
+      spacing: {
         "nav-side": "74px",
-      },
-      height: {
         "nav-top": "64px",
+        "section-top": "96px",
+        "section-left": "80px",
+        "section-right": "74px",
       },
       colors: {
         primary: "#FF4654",
