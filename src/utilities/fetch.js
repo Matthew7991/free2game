@@ -7,7 +7,10 @@ const linkGameDetails = "/game?id="
 function fetching(linkExtension, setStateFunction) {
   fetch(`${apiBaseLink}${linkExtension}`, apiOptions)
     .then((response) => {
-      if (!response.ok) throw new Error("fetch failed")
+      if (!response.ok) {
+        console.log(response)
+        throw new Error("fetch failed")
+      }
       return response.json()
     })
     .then((data) => {

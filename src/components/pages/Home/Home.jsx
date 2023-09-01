@@ -21,8 +21,6 @@ function Home() {
     getTopBrowserGames(setTopBrowserGames)
   }, [])
 
-  if (topBrowserGames) console.log(topBrowserGames)
-
   return (
     <>
       <Hero
