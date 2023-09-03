@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react"
 import Button from "../Button/Button"
 import CategoryItem from "../CategoryItem/CategoryItem"
 import { getGameDetails } from "../../../utilities/fetch"
+import PlatformItem from "../PlatformItem/PlatformItem"
 
 function GameItemVertical({ game, description = false }) {
   const [gameDetails, setGameDetails] = useState(null)
 
   useEffect(() => {
-    getGameDetails(game.id, setGameDetails)
+    if (description) getGameDetails(game.id, setGameDetails)
   }, [])
 
   return (
@@ -35,6 +36,7 @@ function GameItemVertical({ game, description = false }) {
           />
         </div>
         <div className="flex flex-wrap gap-3 px-2 mt-6">
+          <PlatformItem platform={game.platform} />
           <CategoryItem text={game.genre} />
         </div>
       </div>

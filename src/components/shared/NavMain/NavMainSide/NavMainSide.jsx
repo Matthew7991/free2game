@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 function NavMainSide() {
   return (
-    <nav className="relative flex flex-col justify-center p-3 overflow-hidden border-r-2 border-white w-nav-side gap-9">
+    <nav className="relative flex flex-col justify-center h-screen p-3 overflow-hidden border-r-2 border-white w-nav-side gap-9">
       <button
         className={"w-full absolute top-0 left-0"}
         type="button">

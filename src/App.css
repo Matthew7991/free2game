@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("./assets/fonts/Oswald/Oswald-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Titillium";
+  src: url("./assets/fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Source-Sans";
+  src: url("./assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf");
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

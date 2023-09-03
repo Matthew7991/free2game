@@ -9,12 +9,18 @@ import {
 import Section from "../../shared/Section/Section"
 import GamesList from "../../shared/GamesList/GamesList"
 import Button from "../../shared/Button/Button"
+import TopGamesGrid from "../../shared/TopGamesGrid/TopGamesGrid"
 
 function Home() {
   const [recentGames, setRecentGames] = useState(null)
   const [topPcGames, setTopPcGames] = useState(null)
   const [topBrowserGames, setTopBrowserGames] = useState(null)
 
+  const date = new Date()
+  const monthYearString = date.toLocaleDateString(undefined, {
+    month: "long",
+    year: "numeric",
+  })
   useEffect(() => {
     getRecentlyAddedGames(setRecentGames)
     getTopPcGames(setTopPcGames)
@@ -38,15 +44,34 @@ function Home() {
           />
         )}
         <div className="flex justify-end mt-9">
-          <Button text={"show more"} />
+          <Button
+            text={"show more"}
+            path={"/recent"}
+          />
         </div>
       </Section>
 
       <Section>
-        <SectionTitle string={"Top 4 Games for Browser in June 2021"} />
+        <SectionTitle string={`Top 4 Games for PC in ${monthYearString}`} />
+        {topPcGames && <TopGamesGrid list={topPcGames.slice(0, 4)} />}
+        <div className="flex justify-end mt-9">
+          <Button
+            text={"show more"}
+            path={"/all"}
+          />
+        </div>
+      </Section>
+
+      <Section>
+        <SectionTitle
+          string={`Top 4 Games for Browser in ${monthYearString}`}
+        />
         {topBrowserGames && <GamesList list={topBrowserGames.slice(0, 4)} />}
         <div className="flex justify-end mt-9">
-          <Button text={"show more"} />
+          <Button
+            text={"show more"}
+            path={"/all"}
+          />
         </div>
       </Section>
     </>
@@ -56,5 +81,5 @@ function Home() {
 export default Home
 
 function SectionTitle({ string }) {
-  return <h2 className="text-2xl font-bold text-white">{string}</h2>
+  return <h2 className="mb-12 text-2xl font-bold text-white">{string}</h2>
 }

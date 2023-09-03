@@ -3,6 +3,7 @@ const linkRecentGames = "/games?sort-by=release-date"
 const linkTopPcGames = "/games?sort-by=popularity&platform=pc"
 const linkTopBrowserGames = "/games?sort-by=popularity&platform=browser"
 const linkGameDetails = "/game?id="
+const linkGames = "/games"
 
 function fetching(linkExtension, setStateFunction) {
   fetch(`${apiBaseLink}${linkExtension}`, apiOptions)
@@ -28,6 +29,9 @@ export function getTopPcGames(setStateFunction) {
 }
 export function getTopBrowserGames(setStateFunction) {
   fetching(linkTopBrowserGames, setStateFunction)
+}
+export function getGames(setStateFunction) {
+  fetching(linkGames, setStateFunction)
 }
 export function getGameDetails(id, setStateFunction) {
   const linkExtension = linkGameDetails + id

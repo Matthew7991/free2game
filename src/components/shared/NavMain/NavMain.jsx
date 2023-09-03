@@ -4,7 +4,7 @@ import NavMainTop from "./NavMainTop/NavMainTop"
 
 function NavMain() {
   return (
-    <header className="fixed z-50 flex w-screen h-screen">
+    <header className="fixed z-50 flex w-screen h-nav-top">
       <NavMainSide />
       <NavMainTop />
     </header>

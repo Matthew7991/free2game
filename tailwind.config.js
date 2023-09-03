@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -17,6 +19,11 @@ export default {
         blueLight: "#375470",
         blueVeryLight: "#AFC7DF",
         whiteTransparent: "#FFFFFF33",
+      },
+      fontFamily: {
+        sans: ["Oswald", ...defaultTheme.fontFamily.sans],
+        "Titillium-Web": "Titillium",
+        "Source-Sans": "Source-Sans",
       },
     },
   },
