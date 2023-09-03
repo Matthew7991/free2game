@@ -103,61 +103,65 @@ function Details() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col flex-1 px-6 gap-9">
-            <h2 className="text-2xl font-bold text-white max-w-prose">
-              Minimum System Requirements (Windows)
-            </h2>
-            <div className="grid grid-cols-2 gap-6">
-              <div className="flex flex-col gap-3">
-                <h3 className="font-bold leading-[1.2] text-lg text-white">
-                  OS
-                </h3>
-                <p className="text-white font-Titillium-Web">
-                  {game.minimum_system_requirements.os}
-                </p>
-              </div>
-              <div className="flex flex-col gap-3">
-                <h3 className="font-bold leading-[1.2] text-lg text-white">
-                  Processor
-                </h3>
-                <p className="text-white font-Titillium-Web">
-                  {game.minimum_system_requirements.processor}
-                </p>
-              </div>
-              <div className="flex flex-col gap-3">
-                <h3 className="font-bold leading-[1.2] text-lg text-white">
-                  Memory
-                </h3>
-                <p className="text-white font-Titillium-Web">
-                  {game.minimum_system_requirements.memory}
-                </p>
-              </div>
-              <div className="flex flex-col gap-3">
-                <h3 className="font-bold leading-[1.2] text-lg text-white">
-                  Graphics
-                </h3>
-                <p className="text-white font-Titillium-Web">
-                  {game.minimum_system_requirements.graphics}
-                </p>
-              </div>
-              <div className="flex flex-col gap-3">
-                <h3 className="font-bold leading-[1.2] text-lg text-white">
-                  Storage
-                </h3>
-                <p className="text-white font-Titillium-Web">
-                  {game.minimum_system_requirements.storage}
-                </p>
-              </div>
-              <div className="flex flex-col gap-3">
-                <h3 className="font-bold leading-[1.2] text-lg text-white">
-                  Additional Notes
-                </h3>
-                <p className="text-white font-Titillium-Web">
-                  Specifications may change during development
-                </p>
+          {game.minimum_system_requirements ? (
+            <div className="flex flex-col flex-1 px-6 gap-9">
+              <h2 className="text-2xl font-bold text-white max-w-prose">
+                Minimum System Requirements (Windows)
+              </h2>
+              <div className="grid grid-cols-2 gap-6">
+                <div className="flex flex-col gap-3">
+                  <h3 className="font-bold leading-[1.2] text-lg text-white">
+                    OS
+                  </h3>
+                  <p className="text-white font-Titillium-Web">
+                    {game.minimum_system_requirements.os}
+                  </p>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <h3 className="font-bold leading-[1.2] text-lg text-white">
+                    Processor
+                  </h3>
+                  <p className="text-white font-Titillium-Web">
+                    {game.minimum_system_requirements.processor}
+                  </p>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <h3 className="font-bold leading-[1.2] text-lg text-white">
+                    Memory
+                  </h3>
+                  <p className="text-white font-Titillium-Web">
+                    {game.minimum_system_requirements.memory}
+                  </p>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <h3 className="font-bold leading-[1.2] text-lg text-white">
+                    Graphics
+                  </h3>
+                  <p className="text-white font-Titillium-Web">
+                    {game.minimum_system_requirements.graphics}
+                  </p>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <h3 className="font-bold leading-[1.2] text-lg text-white">
+                    Storage
+                  </h3>
+                  <p className="text-white font-Titillium-Web">
+                    {game.minimum_system_requirements.storage}
+                  </p>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <h3 className="font-bold leading-[1.2] text-lg text-white">
+                    Additional Notes
+                  </h3>
+                  <p className="text-white font-Titillium-Web">
+                    Specifications may change during development
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          ) : (
+            ""
+          )}
         </div>
       </Section>
     </>
